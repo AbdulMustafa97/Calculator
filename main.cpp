@@ -7,6 +7,10 @@ int minus(int a, int b)
 {
     return a - b;
 }
+int divide(int a, int b)
+{
+    return a / b;
+}
 int getInput()
 {
     int n;
@@ -17,4 +21,5 @@ int main()
 {
     std::cout << "Result is: " << add(getInput(), getInput());
     std::cout << "Result is: " << minus(getInput(), getInput());
+    std::cout << "Result is: " << divide(getInput(), getInput());
 }
