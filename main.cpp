@@ -1,4 +1,8 @@
 #include <iostream>
+int add(int a, int b)
+{
+    return a + b;
+}
 int getInput()
 {
     int n;
@@ -7,4 +11,5 @@ int getInput()
 }
 int main()
 {
+    std::cout << "Result is: " << add(getInput(), getInput());
 }
