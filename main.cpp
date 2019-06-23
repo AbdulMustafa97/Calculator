@@ -3,6 +3,10 @@ int add(int a, int b)
 {
     return a + b;
 }
+int minus(int a, int b)
+{
+    return a - b;
+}
 int getInput()
 {
     int n;
@@ -12,4 +16,5 @@ int getInput()
 int main()
 {
     std::cout << "Result is: " << add(getInput(), getInput());
+    std::cout << "Result is: " << minus(getInput(), getInput());
 }
