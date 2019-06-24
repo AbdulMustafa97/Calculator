@@ -23,8 +23,31 @@ int getInput()
 }
 int main()
 {
-    std::cout << "Result is: " << add(getInput(), getInput());
-    std::cout << "Result is: " << minus(getInput(), getInput());
-    std::cout << "Result is: " << divide(getInput(), getInput());
-    std::cout << "Result is: " << multiply(getInput(), getInput());
+    int n;
+    while (1)
+    {
+        std::cout << "\n1)Addition\n2)Subtraction\n3)Multiplication\n4)Division\nAny key to exit.\nInput: ";
+        std::cin >> n;
+        switch (n)
+        {
+        case 1:
+            n = add(getInput(), getInput());
+            break;
+        case 2:
+            n = minus(getInput(), getInput());
+            break;
+        case 3:
+            n = multiply(getInput(), getInput());
+            break;
+        case 4:
+            n = divide(getInput(), getInput());
+            break;
+        default:
+            std::cout << "Program exit!." << std::endl;
+            goto terminate;
+        }
+        std::cout << "Result is: " << n << std::endl;
+    }
+terminate:
+    return 0;
 }
