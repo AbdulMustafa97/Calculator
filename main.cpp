@@ -1,4 +1,8 @@
 #include <iostream>
+int exponent(int a, int b)
+{
+    return a ^ b;
+}
 int add(int a, int b)
 {
     return a + b;
@@ -26,7 +30,7 @@ int main()
     int n;
     while (1)
     {
-        std::cout << "\n1)Addition\n2)Subtraction\n3)Multiplication\n4)Division\nAny key to exit.\nInput: ";
+        std::cout << "\n1)Addition\n2)Subtraction\n3)Multiplication\n4)Division\n5)Exponent\nAny key to exit.\nInput: ";
         std::cin >> n;
         switch (n)
         {
@@ -41,6 +45,9 @@ int main()
             break;
         case 4:
             n = divide(getInput(), getInput());
+            break;
+        case 5:
+            n = exponent(getInput(),getInput());
             break;
         default:
             std::cout << "Program exit!." << std::endl;
